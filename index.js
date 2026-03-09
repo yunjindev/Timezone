@@ -1,8 +1,8 @@
-document.addEventListener('DOMContentLoaded', () => {
-  MicroModal.init({
-    onClose: () => { console.log('close') }
-  })
 
-  MicroModal.show('modal-1')
-  MicroModal.close('modal-1')
-});
+import MicroModal from 'micromodal';
+
+MicroModal.init();
+
+console.log("testing");
+
+const currentTime = document.getElementById("currentTime");

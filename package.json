@@ -1,4 +1,8 @@
 {
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack --watch"
+  },
   "dependencies": {
     "dayjs": "^1.11.19",
     "micromodal": "^0.6.1"
