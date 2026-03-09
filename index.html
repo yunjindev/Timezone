@@ -4,9 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Timezone</title>
-    <script src="/dist/main.js"></script>
+    
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    
+    <div class="container">
+        <p>Europe / Placeholder</p>
+        <h1>01:50:00</h1>
+        <h3>Monday, 1 May, 2023</h3>
+
+        <button data-micromodal-trigger="modal-1">Open Modal</button>
+        <!-- [1] -->
+        <div class="modal" id="modal-1" aria-hidden="true">
+
+        <!-- [2] -->
+            <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+
+            <!-- [3] -->
+                <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title" >
+                    <button class="modal__close" aria-label="Close modal" data-micromodal-close>Close</button>
+                    <h2 class="modal__tile" id="modal-1-title">Modal title</h2>
+                    <p class="modal__content">Modal</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/dist/main.js"></script>
 </body>
 </html>

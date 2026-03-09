@@ -1,5 +1,8 @@
-const dayjs = require('dayjs');
+document.addEventListener('DOMContentLoaded', () => {
+  MicroModal.init({
+    onClose: () => { console.log('close') }
+  })
 
-console.log(dayjs().format());
-console.log(dayjs(1318781876406).format());
-console.log("testing");
+  MicroModal.show('modal-1')
+  MicroModal.close('modal-1')
+});
