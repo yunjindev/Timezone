@@ -10,7 +10,7 @@
 <body>
     <div class="container">
         <div class="timezoneContainer">
-            <p id="currentTimezone">Europe / Placeholder</p>
+            <p id="currentTimezone"></p>
             <button class="modal__open" data-micromodal-trigger="modal-1">Open</button>
             <!-- [1] -->
             <div class="modal" id="modal-1" aria-hidden="true">
@@ -23,19 +23,19 @@
                         <button class="modal__close" aria-label="Close modal" data-micromodal-close>Close</button>
                         <h2 class="modal__tile" id="modal-1-title">Select your timezone</h2>
                         <select id="timezoneSelect" class="modal__content">
-                            <option value="America/New_York">EDT (New York)</option>
+                            <option value="America/New_York" selected>EDT (New York)</option>
                             <option value="America/Chicago">CDT (Chicago)</option>
                             <option value="America/Los_Angeles">PDT (Los Angeles)</option>
                             <option value="Europe/London">BST (London)</option>
                             <option value="Asia/Tokyo">JST (Tokyo)</option>
                         </select>
-                        <button id="applyBtn">Apply</button>
+                        
                     </div>
                 </div>
             </div>
         </div>
-        <h1 id="currentTime">01:50:00</h1>
-        <h3 id="currentDay">Monday, 1 May, 2023</h3>
+        <h1 id="currentTime"></h1>
+        <h3 id="currentDay"></h3>
     </div>
     <script src="/dist/main.js"></script>
     
